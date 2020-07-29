@@ -1,0 +1,10 @@
+ro\sd\a2\service\UserService.class
+ro\sd\a2\entity\User.class
+ro\sd\a2\service\MyUserDetailService.class
+ro\sd\a2\Assignment2SdApplication.class
+ro\sd\a2\form\LoginForm.class
+ro\sd\a2\controller\FirstController.class
+ro\sd\a2\entity\UserDetailsImpl.class
+ro\sd\a2\security\AppSecurityConfig.class
+ro\sd\a2\service\repository\UserRepository.class
+ro\sd\a2\tests\SaveOperationTest.class
