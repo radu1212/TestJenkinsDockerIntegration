@@ -61,6 +61,10 @@ public class FirstController {
     public ModelAndView processLoginRequest(@Valid LoginForm loginForm, BindingResult bindingResult){
         ModelAndView modelAndView = new ModelAndView("profile");
         modelAndView.addObject("numeStudent", loginForm.getUsername());
+        User user = new User();
+        user.setPassword(new BCryptPasswordEncoder().encode(loginForm.getPassword()));
+        user.setUsername(loginForm.getUsername());
+        userService.saveUser(user);
         return modelAndView;
     }
 
